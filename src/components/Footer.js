@@ -2,9 +2,10 @@ import Container from "react-bootstrap/esm/Container"
 import { FaGithub } from "react-icons/fa"
 import { FaLinkedin } from "react-icons/fa"
 import { FaInstagram } from "react-icons/fa"
+import { FaTwitter } from "react-icons/fa"
 import { FiCoffee } from "react-icons/fi"
 import { FaReact } from "react-icons/fa"
-import { SiDjango } from "react-icons/si"
+import { FaNodeJs } from "react-icons/fa"
 
 const Footer = () => {
   return (
@@ -39,6 +40,18 @@ const Footer = () => {
             <li className="nav-item">
               <a
                 className="nav-link px-2 text-muted"
+                href="https://twitter.com/adityapatil_xyz"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h3>
+                  <FaTwitter />
+                </h3>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link px-2 text-muted"
                 href="https://instagram.com/pixelthegsd"
                 target="_blank"
                 rel="noreferrer"
@@ -50,9 +63,11 @@ const Footer = () => {
             </li>
           </ul>
           <p className="text-center text-muted">
-            Powered by <FiCoffee />, <FaReact />, and <SiDjango />
+            Powered by <FiCoffee />, <FaReact />, and <FaNodeJs />
           </p>
-          <p className="text-center text-muted">© 2022 Aditya Patil</p>
+          <p className="text-center text-muted">
+            © {new Date().getFullYear()} Aditya Patil
+          </p>
         </footer>
       </Container>
     </>
