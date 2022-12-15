@@ -1,18 +1,18 @@
-import Container from "react-bootstrap/esm/Container"
+import { FiCoffee } from "react-icons/fi"
+import { FaReact } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa"
 import { FaLinkedin } from "react-icons/fa"
 import { FaInstagram } from "react-icons/fa"
+import { HiOutlineMail } from "react-icons/hi"
 import { FaTwitter } from "react-icons/fa"
-import { FiCoffee } from "react-icons/fi"
-import { FaReact } from "react-icons/fa"
-import { FaNodeJs } from "react-icons/fa"
+import Container from "react-bootstrap/esm/Container"
 
 const Footer = () => {
   return (
     <>
       <Container className="mt-auto">
         <footer className="py-3 my-4">
-          <ul className="nav justify-content-center border-bottom pb-3 mb-3">
+          <ul className="nav justify-content-center">
             <li className="nav-item">
               <a
                 className="nav-link px-2 text-muted"
@@ -40,7 +40,7 @@ const Footer = () => {
             <li className="nav-item">
               <a
                 className="nav-link px-2 text-muted"
-                href="https://twitter.com/adityapatil_xyz"
+                href="https://twitter.com/pixelandphotons"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -61,9 +61,21 @@ const Footer = () => {
                 </h3>
               </a>
             </li>
+            <li className="nav-item">
+              <a
+                className="nav-link px-2 text-muted"
+                href="mailto:aditya.patil.gverse@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h3>
+                  <HiOutlineMail />
+                </h3>
+              </a>
+            </li>
           </ul>
           <p className="text-center text-muted">
-            Powered by <FiCoffee />, <FaReact />, and <FaNodeJs />
+            Powered by <FiCoffee /> and <FaReact />
           </p>
           <p className="text-center text-muted">
             © {new Date().getFullYear()} Aditya Patil
