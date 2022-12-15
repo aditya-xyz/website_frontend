@@ -34,6 +34,7 @@ const NavBar = ({ links }) => {
       <Container fixed>
         <Toolbar disableGutters>
           <Typography
+            onClick={() => handlePageClick("/")}
             variant="h6"
             noWrap
             component="a"
@@ -90,6 +91,7 @@ const NavBar = ({ links }) => {
             </Menu>
           </Box>
           <Typography
+            onClick={() => handlePageClick("/")}
             variant="h5"
             noWrap
             component="a"
