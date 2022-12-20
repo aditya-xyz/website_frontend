@@ -12,7 +12,7 @@ const About = () => {
             About
           </p>
         </div>
-        <p className="text-xl mt-20">
+        <p className="text-xl">
           The site is completely responsive and is built using ReactJS and
           Tailwind CSS, and hosted on Netlify. I am using getform.io for the
           contact form and React Scroll for smooth scrolling. You can find the

@@ -1,17 +1,59 @@
 import React from "react"
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa"
 
 const Contact = () => {
+  const links = [
+    {
+      id: 1,
+      child: (
+        <>
+          <FaGithub size={30} />
+        </>
+      ),
+      href: "https://github.com/aditya-xyz",
+      style: "rounded-tl-md",
+    },
+    {
+      id: 2,
+      child: (
+        <>
+          <FaLinkedin size={30} />
+        </>
+      ),
+      href: "https://www.linkedin.com/in/aditya-fullstack/",
+    },
+    {
+      id: 3,
+      child: (
+        <>
+          <FaTwitter size={30} />
+        </>
+      ),
+      href: "https://twitter.com/pixelandphotons",
+    },
+    {
+      id: 4,
+      child: (
+        <>
+          <FaInstagram size={30} />
+        </>
+      ),
+      href: "https://www.instagram.com/pixelthegsd/",
+      style: "rounded-bl-md",
+    },
+  ]
+
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white"
+      className="w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 pt-32 text-white"
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Contact
           </p>
-          <p className="py-6">Submit the form</p>
+          <p className="py-6">Send me a message!</p>
         </div>
         <div className="flex justify-center items-center">
           <form
@@ -41,6 +83,25 @@ const Contact = () => {
               Let's talk
             </button>
           </form>
+        </div>
+        <div className="flex flex-row justify-center right-0">
+          <ul className="flex flex-row">
+            {links.map(({ id, child, href, style }) => (
+              <li
+                key={id}
+                className={`flex justify-between items-center w-20 h-14 px-4 ${style}`}
+              >
+                <a
+                  href={href}
+                  className="flex justify-between items-center w-full text-white"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {child}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>
