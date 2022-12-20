@@ -24,8 +24,7 @@ const About = () => {
           goal there is to use Microsoft Dataverse and its various connectors
           and services to come up with innovative yet low-code/no-code ways to
           stand up entire projects from the ground up quickly. These could be a
-          web app, mobile app, a website, automations, etc. I have also done
-          full stack ASP.Net development alongside Power Platform work.
+          web app, mobile app, a website, automations, etc.
         </p>
       </div>
     </div>

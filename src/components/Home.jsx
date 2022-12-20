@@ -1,7 +1,7 @@
 import React from "react"
 import HeroImage from "../assets/heroImage.png"
-// import { FiArrowRight } from "react-icons/fi"
-// import { Link } from "react-scroll"
+import { FiArrowRight } from "react-icons/fi"
+import { Link } from "react-scroll"
 
 const Home = () => {
   return (
@@ -14,17 +14,14 @@ const Home = () => {
           <h2 className="text-4xl sm:text-6xl text-white">Hi y'all!</h2>
           <p className="text-gray-400 py-4 mr-2 max-w-md">
             I am a Microsoft Power Platform engineer by trade and a Full Stack
-            Developer by passion. In the recent months, I have been fascinated
-            by the world of modern web development, so I decided to build this
-            site using ReactJS.
+            Developer by passion.
           </p>
           <p className="text-gray-400 py-4 mr-2 max-w-md">
             Outside of work, I like to spend my time outdoors with my dog,
-            Pixel. My eventual goal is to road trip through all 50 states with
-            her. So far, I'm on state #25, and Pixel is on #10. If you're
-            interested in following her adventures, follow her on Instagram!
+            Pixel. If you're interested in following her adventures, follow her
+            on Instagram!
           </p>
-          {/* <div>
+          <div>
             <Link
               to="blog"
               smooth
@@ -36,7 +33,7 @@ const Home = () => {
                 <FiArrowRight size={25} className="ml-1" />
               </span>
             </Link>
-          </div> */}
+          </div>
         </div>
         <div>
           <img

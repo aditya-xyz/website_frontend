@@ -7,7 +7,6 @@ import python from "../assets/python.png"
 import nodejs from "../assets/node.png"
 import github from "../assets/github.png"
 import tailwind from "../assets/tailwind.png"
-import mysql from "../assets/mysql.png"
 
 const Experience = () => {
   const technologies = [
@@ -55,12 +54,6 @@ const Experience = () => {
     },
     {
       id: 8,
-      src: mysql,
-      title: "MySQL",
-      style: "shadow-sky-500",
-    },
-    {
-      id: 9,
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",
