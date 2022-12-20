@@ -13,14 +13,6 @@ const About = () => {
           </p>
         </div>
         <p className="text-xl mt-20">
-          When I decided to learn ReactJS, I figured what better way to use that
-          knowledge than to build a personal website, and here we are. As of
-          right now, the site is completely static. I am working on building a
-          NodeJS backend using MongoDB so I can dynamically add to the site
-          without having to make any changes to the front end code.
-        </p>
-        <br />
-        <p className="text-xl">
           The site is completely responsive and is built using ReactJS and
           Tailwind CSS, and hosted on Netlify. I am using getform.io for the
           contact form and React Scroll for smooth scrolling. You can find the

@@ -20,11 +20,9 @@ const Home = () => {
           </p>
           <p className="text-gray-400 py-4 mr-2 max-w-md">
             Outside of work, I like to spend my time outdoors with my dog,
-            Pixel. It's like being a van-lifer but only on the weekends and only
-            using a car, but we make the most of it. My eventual goal is to road
-            trip through all 50 states with her. So far, I'm on state #25, and
-            Pixel is on #10. If you're interested in following her adventures,
-            follow her on Instagram!
+            Pixel. My eventual goal is to road trip through all 50 states with
+            her. So far, I'm on state #25, and Pixel is on #10. If you're
+            interested in following her adventures, follow her on Instagram!
           </p>
           {/* <div>
             <Link
