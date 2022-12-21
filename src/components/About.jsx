@@ -19,12 +19,24 @@ const About = () => {
           code on my GitHub. Feel free to use it if you'd like!
         </p>
         <br />
+        <br />
         <p className="text-xl">
-          My full time job is that of a Microsoft Power Platform engineer. The
-          goal there is to use Microsoft Dataverse and its various connectors
-          and services to come up with innovative yet low-code/no-code ways to
-          stand up entire projects from the ground up quickly. These could be a
-          web app, mobile app, a website, automations, etc.
+          I am currently working on adding a Node.js backend to this site so I
+          can serve up content from a MongoDB database. This will make the site
+          truly dynamic and speed up the process of making updates to it.
+        </p>
+        <br />
+        <br />
+        <p className="text-xl">
+          As a full time Microsoft Power Platform professional by trade, I work
+          on using Microsoft Dataverse and its whole suite of connectors and
+          functionalities to build low-code/no-code solutions. These include a
+          standalone app, mobile app, website, and automations.
+        </p>
+        <br />
+        <br />
+        <p className="text-xl">
+          Check out my work and social links on the Contact page!
         </p>
       </div>
     </div>

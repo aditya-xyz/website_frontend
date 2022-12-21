@@ -1,7 +1,11 @@
 import React from "react"
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa"
+import { BsMedium } from "react-icons/bs"
 
 const Contact = () => {
+  const GETFORM_FORM_ENDPOINT =
+    "https://getform.io/f/0754b1cf-543b-4f39-82bb-5f766c1a44a7"
+
   const links = [
     {
       id: 1,
@@ -26,10 +30,10 @@ const Contact = () => {
       id: 3,
       child: (
         <>
-          <FaTwitter size={30} />
+          <BsMedium size={30} />
         </>
       ),
-      href: "https://twitter.com/pixelandphotons",
+      href: "https://medium.com/@adityapatil.xyz",
     },
     {
       id: 4,
@@ -57,7 +61,7 @@ const Contact = () => {
         </div>
         <div className="flex justify-center items-center">
           <form
-            action="https://getform.io/f/0754b1cf-543b-4f39-82bb-5f766c1a44a7"
+            action={GETFORM_FORM_ENDPOINT}
             method="POST"
             className="flex flex-col w-full md:w-1/2"
           >
@@ -65,17 +69,20 @@ const Contact = () => {
               type="text"
               name="name"
               placeholder="Enter your name"
+              required
               className="p-2 bg-transparent border-2 text-white focus:outline-none"
             />
             <input
               type="text"
               name="email"
               placeholder="Enter your email"
+              required
               className="my-4 p-2 bg-transparent border-2 text-white focus:outline-none"
             />
             <textarea
               name="message"
               placeholder="Enter your message"
+              required
               rows="10"
               className="p-2 bg-transparent border-2 text-white focus:outline-none"
             ></textarea>
