@@ -67,7 +67,12 @@ const NavBar = () => {
               className="px-4 cursor-pointer capitalize py-6 text-4xl"
             >
               <Link
-                onClick={() => setNav(!nav)}
+                onClick={() => {
+                  setNav(!nav)
+                  !nav
+                    ? (document.body.style.overflow = "hidden")
+                    : (document.body.style.overflow = "unset")
+                }}
                 to={link}
                 smooth
                 duration={500}
