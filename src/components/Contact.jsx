@@ -83,15 +83,12 @@ const Contact = () => {
         </div>
         <div className="flex justify-center items-center">
           <form
-            action={GETFORM_FORM_ENDPOINT}
-            method="POST"
             onSubmit={handleSubmit(submit)}
             className="flex flex-col w-full md:w-1/2"
           >
             <input
               {...register("name")}
               type="text"
-              // name="name"
               placeholder="Enter your name"
               required
               className="p-2 bg-transparent border-2 text-white focus:outline-none"
@@ -99,14 +96,12 @@ const Contact = () => {
             <input
               {...register("email")}
               type="text"
-              // name="email"
               placeholder="Enter your email"
               required
               className="my-4 p-2 bg-transparent border-2 text-white focus:outline-none"
             />
             <textarea
               {...register("message")}
-              // name="message"
               placeholder="Enter your message"
               required
               rows="10"
@@ -123,7 +118,7 @@ const Contact = () => {
             {links.map(({ id, child, href, style }) => (
               <li
                 key={id}
-                className={`flex justify-between items-center w-20 h-14 px-4 ${style}`}
+                className={`hover:scale-125 duration-300 flex justify-between items-center w-20 h-14 px-4 ${style}`}
               >
                 <a
                   href={href}
