@@ -12,7 +12,7 @@ const About = () => {
             About
           </p>
         </div>
-        <p className="text-xl">
+        <p className="text-xl text-gray-400">
           This site is completely responsive and is built using ReactJS and
           Tailwind CSS, and hosted on Netlify. I am using getform.io for the
           contact form and React Scroll for smooth scrolling. You can find the
@@ -20,14 +20,14 @@ const About = () => {
         </p>
         <br />
         <br />
-        <p className="text-xl">
+        <p className="text-xl text-gray-400">
           I am currently working on adding a Node.js backend to this site so I
           can serve up content from a MongoDB database. This will make the site
           truly dynamic and speed up the process of making updates to it.
         </p>
         <br />
         <br />
-        <p className="text-xl">
+        <p className="text-xl text-gray-400">
           As a full time Microsoft Power Platform professional by trade, I work
           on using Microsoft Dataverse and its suite of connectors and
           functionalities to build low-code/no-code solutions. This includes
@@ -35,7 +35,7 @@ const About = () => {
         </p>
         <br />
         <br />
-        <p className="text-xl">
+        <p className="text-xl text-gray-400">
           Check out my work and social links on the Contact page!
         </p>
       </div>
