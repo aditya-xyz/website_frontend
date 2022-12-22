@@ -19,20 +19,20 @@ const Home = () => {
             every Coloradan is!
           </p>
           <p className="text-gray-400 py-4 mr-2 max-w-md text-xl">
-            Outside of work, I like to spend my time with my dog, Pixel. So far
-            she has been to 10 states and that number will only go up! If you're
-            interested in following her adventures, follow her on Instagram!
-            Link is under the Contact section.
+            Outside of work, I like to spend time with my dog, Pixel. So far she
+            has been to 10 states and that number will only go up! If you're
+            interested in following her adventures, check out her Instagram! All
+            links are under the Contact section.
           </p>
           <br />
           <div>
             <Link
-              to="projects"
+              to="experience"
               smooth
               duration={500}
               className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from from-cyan-500 to-blue-500 cursor-pointer"
             >
-              Projects
+              Experience
               <span className="group-hover:rotate-90 duration-300">
                 <FiArrowRight size={25} className="ml-1" />
               </span>
