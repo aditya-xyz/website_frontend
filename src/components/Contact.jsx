@@ -79,7 +79,7 @@ const Contact = () => {
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Contact
           </p>
-          <p className="py-6">Send me a message!</p>
+          <p className="py-6 text-gray-400 text-xl">Send me a message!</p>
         </div>
         <div className="flex justify-center items-center">
           <form

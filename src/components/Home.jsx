@@ -12,16 +12,19 @@ const Home = () => {
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-4xl sm:text-6xl text-white">Hi y'all!</h2>
-          <p className="text-gray-400 py-4 mr-2 max-w-md">
+          <br />
+          <p className="text-gray-400 py-4 mr-2 max-w-md text-xl">
             I am a Full Stack Developer, dog dad, coffee connoisseur,
             photography enthusiast, and a fan of the outdoors, like I'm sure
             every Coloradan is!
           </p>
-          <p className="text-gray-400 py-4 mr-2 max-w-md">
+          <p className="text-gray-400 py-4 mr-2 max-w-md text-xl">
             Outside of work, I like to spend my time with my dog, Pixel. So far
             she has been to 10 states and that number will only go up! If you're
             interested in following her adventures, follow her on Instagram!
+            Link is under the Contact section.
           </p>
+          <br />
           <div>
             <Link
               to="projects"
