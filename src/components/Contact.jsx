@@ -1,10 +1,32 @@
 import React from "react"
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa"
 import { BsMedium } from "react-icons/bs"
+import { useForm } from "react-hook-form"
+import axios from "axios"
+import { ToastContainer, toast } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 
 const Contact = () => {
   const GETFORM_FORM_ENDPOINT =
     "https://getform.io/f/0754b1cf-543b-4f39-82bb-5f766c1a44a7"
+
+  const { register, handleSubmit, reset } = useForm()
+
+  const submit = (data) => {
+    axios
+      .post(GETFORM_FORM_ENDPOINT, {
+        name: data.name,
+        email: data.email,
+        message: data.message,
+      })
+      .then(() => {
+        toast.success("Thank you! I will reach out to you shortly.", {
+          position: toast.POSITION.BOTTOM_CENTER,
+        })
+        reset()
+      })
+      .catch((error) => console.log(error))
+  }
 
   const links = [
     {
@@ -63,24 +85,28 @@ const Contact = () => {
           <form
             action={GETFORM_FORM_ENDPOINT}
             method="POST"
+            onSubmit={handleSubmit(submit)}
             className="flex flex-col w-full md:w-1/2"
           >
             <input
+              {...register("name")}
               type="text"
-              name="name"
+              // name="name"
               placeholder="Enter your name"
               required
               className="p-2 bg-transparent border-2 text-white focus:outline-none"
             />
             <input
+              {...register("email")}
               type="text"
-              name="email"
+              // name="email"
               placeholder="Enter your email"
               required
               className="my-4 p-2 bg-transparent border-2 text-white focus:outline-none"
             />
             <textarea
-              name="message"
+              {...register("message")}
+              // name="message"
               placeholder="Enter your message"
               required
               rows="10"
@@ -89,6 +115,7 @@ const Contact = () => {
             <button className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
               Let's talk
             </button>
+            <ToastContainer />
           </form>
         </div>
         <div className="flex flex-row justify-center right-0">
