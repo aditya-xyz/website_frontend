@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div
       name="about"
-      className="pt-20 md:pt-0 w-full min-h-screen bg-gradient-to-b from-gray-800 to-black text-white md:h-screen"
+      className="pt-20 w-full min-h-screen bg-gradient-to-b from-gray-800 to-black text-white md:h-screen"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -13,7 +13,7 @@ const About = () => {
           </p>
         </div>
         <p className="text-xl">
-          The site is completely responsive and is built using ReactJS and
+          This site is completely responsive and is built using ReactJS and
           Tailwind CSS, and hosted on Netlify. I am using getform.io for the
           contact form and React Scroll for smooth scrolling. You can find the
           code on my GitHub. Feel free to use it if you'd like!
@@ -29,9 +29,9 @@ const About = () => {
         <br />
         <p className="text-xl">
           As a full time Microsoft Power Platform professional by trade, I work
-          on using Microsoft Dataverse and its whole suite of connectors and
-          functionalities to build low-code/no-code solutions. These include a
-          standalone app, mobile app, website, and automations.
+          on using Microsoft Dataverse and its suite of connectors and
+          functionalities to build low-code/no-code solutions. This includes
+          standalone web apps, mobile apps, websites, and automations.
         </p>
         <br />
         <br />
