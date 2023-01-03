@@ -13,10 +13,10 @@ const About = () => {
           </p>
         </div>
         <p className="text-xl text-gray-400">
-          This site is completely responsive and is built using ReactJS and
-          Tailwind CSS, and hosted on Netlify. I am using getform.io for the
-          contact form and React Scroll for smooth scrolling. You can find the
-          code on my GitHub. Feel free to use it if you'd like!
+          This site is responsive and is built using React and Tailwind CSS. I
+          am using getform.io for the contact form and React Scroll for smooth
+          scrolling. You can find the code on my GitHub. Feel free to use it if
+          you'd like!
         </p>
         <br />
         <br />
